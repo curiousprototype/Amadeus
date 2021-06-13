@@ -1,0 +1,7 @@
+These scripts are write to test the performance of different xc-functionals and different basis function numbers.
+
+As well as a small exercise and learning of shell script to cut and modify data files.
+
+Can learn some practical things about sed, awk, echo and array here.
+
+The xc_func_test.sh is the final script, other scripts are all a part of it, I wrote each function separately in these scripts and then combine them togeter in the final xc_func_test.sh script.
