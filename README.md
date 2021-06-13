@@ -1,4 +1,5 @@
 # Amadeus
+This folder is a remote back-up for all valuable stuffs in my research and others.
 
 File ***allscripts*** stored all scripts I wrote as a back-up
 1. high-throughput scripts using **effmass** code to generate effective masses for many materials.
