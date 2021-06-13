@@ -7,7 +7,7 @@ File ***allscripts*** stored all scripts I wrote as a back-up
 2. small bash and python scripts to modify input files and post-process for **SISSO++** code.
 
 3. scripts for **FHI-aims**
-<br/>
+
 To compile **FHI-aims**, I recommend to use **Intel oneAPI toolkits** (espacially ifort, icc, imkl and impi).
 Here's a cmake file shows flags and compilers I use to compile FHI-aims.
 Attention: use ***mpiifort*** and ***mpiicc*** instead of simply ifort or icc because we use MPI.
