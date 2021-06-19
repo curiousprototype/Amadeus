@@ -15,3 +15,5 @@ see dir: /home/quan/Desktop/researchs/learn_fhi_aims/tutorial_2/my_homework/exer
 see also the tutorial2 section: exercise_9
 
 3. set_VBM_to_zero.sh : was script in $AIMSUTILAS, but were wrote in python2, I change it to python3
+
+4. Many other scripts, see each directory.
