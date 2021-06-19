@@ -1,0 +1,6 @@
+scripts for finding molecule bond length with lowest energy
+
+examples in dir:/home/quan/Desktop/researchs/learn_fhi_aims/tutorial_2/my_homework/exercise_2
+
+run_htp.sh for run calculation
+pp_energies.sh for post-process: get energy

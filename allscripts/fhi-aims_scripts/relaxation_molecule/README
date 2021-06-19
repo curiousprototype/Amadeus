@@ -1,0 +1,7 @@
+scripts for structure relaxation
+
+create_relax_movie.py : generate relaxation movie.
+
+usage: create_relax_movie.py xxxx_relaxation.out > xxx.xyz
+
+Then use Jmol to view.

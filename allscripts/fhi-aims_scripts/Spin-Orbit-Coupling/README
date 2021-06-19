@@ -1,0 +1,7 @@
+plot band structure with and without SOC.
+
+
+Attention:
+
+Seperate_SR_and_SOC.py uses the script set_band_structure_VBM_to_zero_energy.sh
+This script was under $AIMSUTILS and wrote in python2, here I change it into python3 script.

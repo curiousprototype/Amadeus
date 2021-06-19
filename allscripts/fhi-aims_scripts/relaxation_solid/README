@@ -1,0 +1,5 @@
+scripts for find lattice constant with the lowest energy view structure relaxation animate.
+
+run_diamond.py : can adjust for other structures. Check it!
+
+postprocess.py : extract total energies and summuarize as function of lattice constant

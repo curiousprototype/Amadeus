@@ -1,0 +1,7 @@
+get dipole by two methods:
+
+examples in dir: /home/quan/Desktop/researchs/learn_fhi_aims/tutorial_2/my_homework/exercise_2
+
+pp_dipole: read dipole directly in FHI-aims output file.
+
+Mulliken: calculate dipole by Mulliken Charge partition scheme, see tutorial2/exercise2
