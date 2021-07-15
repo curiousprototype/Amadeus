@@ -1,0 +1,36 @@
+1. get the fifth line from the end of file 'result.txt'.
+   And then take the 2nd content of this line, output to file 'collect.txt'
+
+command:
+>>> tac result.txt | sed -n 5p | awk '{print$2}' >> collect.txt
+
+Detail:
+   'tac result.txt' means reverse the line of result.txt and output to the screen
+   'sed -n 5p' means get the 5th line, we use '|', so it get 5th line from 'tac result.txt' which means the 5th line from the end of result.txt
+   'awk '{print$2}'' means print the 2nd content of each line, divided by spaces.
+
+2. do decimal multiple in shell script
+
+command:
+>>> echo "num1 * num2" |bc
+
+Example:
+>>> lo_THz=$(tac result.txt | sed -n 5p | awk '{print$2}')
+>>> lo_cm=$(echo "$lo_THz * 33.35641" |bc)
+
+3. loop all files and directories under path.
+
+command:
+>>> for file in `ls $l`; do
+>>>        echo "$file"
+>>> done
+
+Attention:
+  this loop will loop over all file and directories. If you only want directories or files, you need to write a 'if' judgement.
+See below:
+
+>>> if [ -d $folder ]; then
+            echo $folder
+>>> fi
+
+This 'if' command will output all DIRECTORIES.

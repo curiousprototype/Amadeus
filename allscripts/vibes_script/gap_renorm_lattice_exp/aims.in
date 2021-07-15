@@ -1,0 +1,26 @@
+[calculator]
+name:              aims
+
+[calculator.parameters]
+xc:                 pw-lda
+sc_accuracy_rho:    1E-6
+
+# Reciprocal Space Grid
+k_grid: 4 4 4
+
+# Electronic band structure
+output: band  0     0     0     0.00  0.25  0.25  50   Gamma  Delta
+output: band  0.00  0.25  0.25  0     0.5   0.5   50   Delta  X
+output: band  0     0.5   0.5   0.25  0.50  0.75  50   X      W
+output: band  0.25  0.50  0.75  0.375 0.375 0.75  50   W      K
+output: band  0.375 0.375 0.75  0     0     0     50   K      Gamma
+output: band  0     0     0     0.25  0.25  0.25  50   Gamma  Lambda
+output: band  0.25  0.25  0.25  0.5   0.5   0.5   50   Lambda L
+output_level: MD_light
+
+[calculator.basissets]
+Si: light
+
+[files]
+geometry: geometry.in
+
