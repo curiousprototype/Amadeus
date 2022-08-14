@@ -9,7 +9,9 @@ Detail:
    'sed -n 5p' means get the 5th line, we use '|', so it get 5th line from 'tac result.txt' which means the 5th line from the end of result.txt
    'awk '{print$2}'' means print the 2nd content of each line, divided by spaces.
 
-2. do decimal multiple in shell script
+awk's variable '$n' means: the nth content of current record. $0 means the content of current line.
+
+2. do decimal multiple & divide in shell script
 
 command:
 >>> echo "num1 * num2" |bc
@@ -17,6 +19,13 @@ command:
 Example:
 >>> lo_THz=$(tac result.txt | sed -n 5p | awk '{print$2}')
 >>> lo_cm=$(echo "$lo_THz * 33.35641" |bc)
+
+Divide: the result of bc have no decimal part !!! So use awk to do decimal divide
+
+command:
+>>> average_td=$(awk 'BEGIN{print ('$tdA_sqrt'+'$tdB_sqrt')/2}')
+
+variable use '' to specify.
 
 3. loop all files and directories under path.
 
@@ -34,3 +43,26 @@ See below:
 >>> fi
 
 This 'if' command will output all DIRECTORIES.
+
+4. delete the last letter of a string
+
+For example: var="1234567,"
+
+command:
+>>> var="1234567,"
+>>> ${var%?}, the result is: echo ${var%?} = 1234567
+
+5. Do square root by shell
+
+>>> a = 2.000
+>>> echo "sqrt($a)" |bc = 1.414
+
+6. sort each line of a file by number order.
+
+use sort function, defaulted sort by ASCII code order up. -n means by number order up. -n -r means by number order down.
+>>> sort -n test.txt > sorted.txt
+
+7. find specific dirs or files by name:
+
+use find function, for example: find all DIR(not file) named as 'cv*' under path: /path. -type d means only dirs.
+>>> find /path -name "cv*" -type d

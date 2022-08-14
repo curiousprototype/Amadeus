@@ -114,7 +114,9 @@ band_totlength = 0.0 # total length of all band segments
 fin2 = open("control.in","r")
 for line in fin2:
     words = line.split("#")[0].split()
+    # JKQ: split("#") means split by separator "#"
     nline = " ".join(words)
+    # JKQ: " ".join(words) means turn array words into a string, by separator " ".
 
     if nline.startswith("spin collinear") and not PLOT_SOC:
         max_spin_channel = 2

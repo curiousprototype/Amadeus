@@ -1,0 +1,13 @@
+executable_dir  u/jquan/download/FHIaims/bin/bzu.intel.2150.x
+basis_dir /u/jquan/download/FHIaims/species_defaults/defaults_2020
+basis_tier light
+calculator aims
+xc_functional pbe
+kgrid 1 1 KP 
+bs_unfolding True
+KS_method parallel
+bzpath  -0.0 -0.0 -0.5 0.0 0.0 0.5 65
+uc_bzpath -0.0 -0.0 -0.5 0.0 0.0 0.5
+geometry_prim geometry.in.primitive
+geometry_super geometry.in.supercell
+transformation_matrix 1 0 0 0 1 0 0 0 SC

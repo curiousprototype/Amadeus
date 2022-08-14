@@ -4,7 +4,8 @@ Based on tutorials 2,3 and 6 at: https://th.fhi-berlin.mpg.de/meetings/DFT-works
 
 Some scripts they provide are out-of-date, I modified them.
 
-1. aimsplot_update.py:  use for ploting band structure and dos.
+1. aimsplot_old.py:  use for ploting band structure and dos (**OLD VERSION**).
+   aimsplot.py:      **NEW VERSION**
 
 dir  vibes_script:  scripts for FHI-vibes
 
@@ -16,4 +17,6 @@ see also the tutorial2 section: exercise_9
 
 3. set_VBM_to_zero.sh : was script in $AIMSUTILAS, but were wrote in python2, I change it to python3
 
-4. Many other scripts, see each directory.
+4. My_tools: some useful small tools write my myself.
+
+5. Many other scripts, see each directory.

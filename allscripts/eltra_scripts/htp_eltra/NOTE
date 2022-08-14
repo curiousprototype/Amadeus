@@ -1,0 +1,5 @@
+Scripts for htp calcualted spectral function of multiple harmonic samplings.
+
+1. use gen_sample.sh to generate harmonic samplings
+2. use prepare_eltra.sh to move samplings into eltra calculation folders
+3. use preprocess_eltra.sh to prepare input files and submit eltra calculation.

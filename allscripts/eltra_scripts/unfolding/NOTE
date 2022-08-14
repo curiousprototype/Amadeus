@@ -1,0 +1,8 @@
+1. plot_unfolding.py: script to plot unfolded bands.
+INPUT: control.in and band_unfold.out file. 
+Here band_unfold.out file is my output routine on my working branch in bz_unfolding.f90.
+It will output unfolding weights "FINALCC".
+
+A feature of this script is that it can plot different bands in different colors.
+For example: One can plot first 10 states in orange and plot the rest spectrum in blue.
+(This is for comparison differences between output full spectrum or not.)

@@ -1,0 +1,17 @@
+#!/bin/bash -l
+# Standard output and error:
+#SBATCH -o ./job.out.%j
+#SBATCH -e ./job.err.%j
+# Initial working directory:
+#SBATCH -D ./
+# Job Name: NNNN
+#SBATCH -J NNNN
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=30
+# Wall clock limit (max. is 24 hours):
+#SBATCH --time=2:00:00
+#SBATCH --mem=80000
+
+export OMP_NUM_THREADS=1
+srun ~/download/FHIaims/bin/bzu.intel.2150.x > aims.out
+
